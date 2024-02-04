@@ -6,7 +6,7 @@ import Projects from "./Projects";
   const client = createClient({
     space: "eurwomxco497",
     environment: "master", // defaults to 'master' if not set
-    accessToken: "aqvwo_J6MxF3AWKpNKq8XKXVGr6isScu2UnawEVB6t0",
+    accessToken: import.meta.env.VITE_API_KEY,
   });
 
   export function useFetchProjects() {
